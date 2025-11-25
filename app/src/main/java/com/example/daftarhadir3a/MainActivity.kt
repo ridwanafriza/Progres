@@ -118,9 +118,9 @@ import androidx.recyclerview.widget.RecyclerView
             val ListMahasiswa = mutableListOf<Mahasiswa>()
             ListMahasiswa.add(Mahasiswa("Arif Syafarian", "243307005", StatusKehadiran.HADIR))
             ListMahasiswa.add(Mahasiswa("Alfian", "243307004", StatusKehadiran.HADIR))
-            ListMahasiswa.add(Mahasiswa("Arifin", "243307001", StatusKehadiran.HADIR))
-            ListMahasiswa.add(Mahasiswa("Syafarian", "243307002", StatusKehadiran.HADIR))
-
+            ListMahasiswa.add(Mahasiswa("Ach", "243307001", StatusKehadiran.HADIR))
+            ListMahasiswa.add(Mahasiswa("Faris", "243307017", StatusKehadiran.HADIR))
+            ListMahasiswa.add(Mahasiswa("Ridwan Afriza", "243307023", StatusKehadiran.HADIR))
             return ListMahasiswa
         }
 
