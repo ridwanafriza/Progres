@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_nav_graph"
+    app:startDestination="@id/orderSummaryFragment">
+
+    <fragment
+        android:id="@+id/orderSummaryFragment"
+        android:name="com.example.daftarhadir3a.Order.OrderSummaryFragment"
+        android:label="fragment_order_summary"
+        tools:layout="@layout/fragment_order_summary" >
+        <action
+            android:id="@+id/action_orderSummaryFragment_to_statusSummaryFragment"
+            app:destination="@id/statusSummaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentSummaryFragment"
+        android:name="com.example.daftarhadir3a.Order.PaymentSummaryFragment"
+        android:label="fragment_payment_summary"
+        tools:layout="@layout/fragment_payment_summary" >
+        <action
+            android:id="@+id/action_paymentSummaryFragment_to_orderSummaryFragment"
+            app:destination="@id/orderSummaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statusSummaryFragment"
+        android:name="com.example.daftarhadir3a.Order.StatusSummaryFragment"
+        android:label="fragment_status_summary"
+        tools:layout="@layout/fragment_status_summary" />
+</navigation>
